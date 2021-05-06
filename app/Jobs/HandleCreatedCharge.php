@@ -23,6 +23,9 @@ class HandleCreatedCharge implements ShouldQueue
     public function handle()
     {
         // do your work here
+        Log::debug("Job Log started");
+        Log::debug($this->webhookCall->payload);
+        Log::debug("Endedd");
 
         // you can access the payload of the webhook call with `$this->webhookCall->payload`
     }

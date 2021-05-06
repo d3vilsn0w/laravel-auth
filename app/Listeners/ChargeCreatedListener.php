@@ -12,5 +12,8 @@ class ChargeCreatedListener implements ShouldQueue
         // do your work here
 
         // you can access the payload of the webhook call with `$webhookCall->payload`
+        Log::debug("Listerner Log started");
+        Log::debug($webhookCall->payload);
+        Log::debug("Endedd");
     }
 }
