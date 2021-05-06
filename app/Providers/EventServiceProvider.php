@@ -28,6 +28,9 @@ class EventServiceProvider extends ServiceProvider
             'SocialiteProviders\\ThirtySevenSignals\\ThirtySevenSignalsExtendSocialite@handle',
             'SocialiteProviders\\LinkedIn\\LinkedInExtendSocialite@handle',
         ],
+        'coinbase::charge:created' => [
+        App\Listeners\ChargeCreatedListener::class,
+       ],
     ];
 
     /**
